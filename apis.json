@@ -3,5 +3,26 @@
     "info": {
         "title": "Test",
         "description": "This is a test"
+    },
+    "paths": {
+        "/users": {
+            "get": {
+                "description": "Get Stuff"
+            }
+        },
+        "/users/{id}": {
+            "get": {
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ]
+            }
+        }
+    },
+    "definitions": {
+        "Foo": {}
     }
 }
